@@ -1,9 +1,9 @@
 package edu.arizona.cs;
 
 public class Document {
-    private String docid ="";
-    private int position1=2;
-    private int position2=2;
+     String docid;
+     int position1;
+     int position2;
 
     public Document(String docid_in, int position1_in,int position2_in){
         docid=docid_in;
@@ -11,11 +11,9 @@ public class Document {
         position2=position2_in;
     }
 
-    public boolean equals(Document answer) {
-        if (answer == null || getClass() != answer.getClass()) return false;
-        assert this.docid.equals(answer.docid);
-        assert this.position1.equals(answer.position1);
-        assert this.position2.equals(answer.position2);
-        return true;
+    public void equals(Document answer) {
+        assert docid.equals(answer.docid);
+        assert position1==(answer.position1);
+        assert position2==(answer.position2);
     }
 }
