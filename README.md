@@ -36,7 +36,6 @@ Also, you **should not edit** these files:
 - `src/test/java/edu/arizona/cs/TestQ7_hw2.java`
 - `src/main/java/edu/arizona/cs/Document.java`
 
-**Note: The file `src/main/resources/Docs.txt` is the input file you must use (or would have started using) as per hw3 guidelines. Please don't edit it.**
 
 
 # Test your code
