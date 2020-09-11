@@ -21,8 +21,10 @@ public class InvertedIndex {
         }
     }
 
-    public String[] runQ5_1(String query) throws java.io.FileNotFoundException,java.io.IOException {
-        String[] dummy_ans = {"Doc1","Doc4"};
+    public Document[] runQ5_1(String query) throws java.io.FileNotFoundException,java.io.IOException {
+        ans1=new Document("Doc1",3,1);
+        ans2=new Document("Doc2",1,2);
+        Document[] dummy_ans= {ans1,ans2};
         return dummy_ans;
     }
 

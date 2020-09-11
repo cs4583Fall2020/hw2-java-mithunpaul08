@@ -5,20 +5,29 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class TestQ5 {
+public class TestQ7_hw2 {
 
     @Test
-    public void testQ5_1() {
+    public void testQ7_1_1() {
         String inputFileFullPath="src/main/resources/Docs.txt";
         try {
-            String query = "schizophrenia AND drug";
+            String query = "schizophrenia /2 drug";
+            ans1=new Document("Doc1",3,1);
+            ans2=new Document("Doc2",1,2);
+            Document[] gold_q711= {ans1,ans2};
             InvertedIndex objInvertedIndex = new InvertedIndex(inputFileFullPath);
-            String[] ans_q5_1 = objInvertedIndex.runQ5_1(query);
-            String[] doc_names_q1 = {"Doc1", "Doc4"};
+            Document[] ans_q7_1_1 = objInvertedIndex.runQ5_1(query);
+
+            assert (ans_q711) !=null;
+            assert type(ans_q711) == list;
+            assert len(ans_q711) > 0;
+            assert len(ans_q711) == 2;
+
+            assert ans_q7_1_1.equals(gold_q711);
             int counter1 = 0;
-            assertEquals((doc_names_q1.length) , ans_q5_1.length);
-            for (String docs : ans_q5_1) {
-                assertEquals(doc_names_q1[counter1], ans_q5_1[counter1]);
+            assertEquals((gold_q711.length) , ans_q7_1_1.length);
+            for (Document docs : gold_q711) {
+                assert gold_q711[counter1].equals(ans_q7_1_1[counter1])==true;
                 counter1 = counter1 + 1;
             }
         }
