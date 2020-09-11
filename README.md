@@ -96,8 +96,8 @@ click on the link which says `details` and find out what is causing the issue or
 
 Your instructor will grade the code off this pull request. 
 Pull requests submitted after the deadline won’t be considered.
-You don't have to submit the code in D2l. Note that you still have to submit the answers to qns 1 to 4 in D2l.
-
+If you have raised a pull request, then you don't have to submit the code in D2l.
+However do note that you still have to submit the answers to the other written questions in D2l. If there are anything in particular you want us to keep in mind while grading (written or programming part) create a readme.txt and include it in your zip file uploaded to D2l.
 # Grading
 
 
