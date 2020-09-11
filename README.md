@@ -14,14 +14,14 @@ Before you start editing any code, you will need to create a new branch in your
 GitHub repository to hold your work.
 
 1. Go to the repository that GitHub Classroom created for you. You should have received an email/link and you are most probably reading this there. It should look like
-`https://github.com/cs4583_fall2020_hw1_java/cs-<your-username>`, where
+`https://github.com/cs4583_fall2020_hw*_java/cs-<your-username>`, where
 `<your-username>` is your GitHub username. 
 [Create a branch through the GitHub interface](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/).
 2. Name your `<branch>` as `lastname_firstname_dev`
 2. Clone the repository to your local machine and checkout the branch you
 just created. Your command must be similar to :
    ```
-   git clone -b <branch> https://github.com/cs4583_fall2020_hw1_java/cs-<your-username>.git
+   git clone -b <branch> https://github.com/cs4583_fall2020_hw*_java/cs-<your-username>.git
    git checkout lastname_firstname_dev
    ```
 
@@ -32,15 +32,16 @@ the class `InvertedIndex`. These functions should return the documents as asked 
 
 Also, you **should not edit** these files:
 - `.travis.yml`
-- `src/test/resources/Docs.txt`
-- `src/test/java/edu/arizona/cs/TestQ5.java`
+- `src/main/resources/Docs.txt`
+- `src/test/java/edu/arizona/cs/TestQ7_hw2.java`
+- `src/main/java/edu/arizona/cs/Document.java`
 
-**Note: The file `src/test/resources/Docs.txt` is the input file you must use (or would have started using) as per hw3 guidelines. Please don't edit it.**
+**Note: The file `src/main/resources/Docs.txt` is the input file you must use (or would have started using) as per hw3 guidelines. Please don't edit it.**
 
 
 # Test your code
 
-Tests have been provided for you in the `src/test/java/edu/arizona/cs/test_q5.java` file.
+Tests have been provided for you in the `src/test/java/edu/arizona/cs/Test_*.java` file.
 To run all the provided tests, run the ``mvn test`` script from the top project directory which contains a file named `pom.xml`
 
 If your code passes the test case, you will see an output similar to:
@@ -101,9 +102,10 @@ You don't have to submit the code in D2l. Note that you still have to submit the
 # Grading
 
 
-Qn5 of this assignment will be graded primarily on their ability to pass the tests that
+The programming question of this assignment will be graded primarily on their ability to pass the tests that
 have been provided to you on github after the pull request.
 Assignments that pass all, and with the corresponding code implementing the correct logic, will receive at least 95% of the
 possible points.
 
 To get the remaining of the points, your code will be checked for things like readability and code quality.
+***Please note that this time on there will be a penalty for not following all instructions. Especially `do not merge the pull request`.***
