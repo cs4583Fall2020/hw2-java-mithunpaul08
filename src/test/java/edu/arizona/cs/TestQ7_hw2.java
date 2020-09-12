@@ -78,7 +78,7 @@ public class TestQ7_hw2 {
             assert ans_q7_2_directional.length == 1;
             int counter=0;
             for(Document doc: gold_q7_1_2) {
-                doc.equals(ans_q7_2_directional[counter]);
+                assert doc.equals(ans_q7_2_directional[counter])==true;
                 counter+=1;
             }
         }

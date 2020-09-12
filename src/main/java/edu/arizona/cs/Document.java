@@ -11,9 +11,19 @@ public class Document {
         position2=position2_in;
     }
 
-    public void equals(Document answer) {
-        assert docid.equals(answer.docid);
-        assert position1==(answer.position1);
-        assert position2==(answer.position2);
+    public boolean equals(Document answer) {
+        if  (docid!=answer.docid)
+        {
+            return false;
+        }
+        if  (position1!=answer.position1)
+        {
+            return false;
+        }
+        if  (position2!=answer.position2)
+        {
+            return false;
+        }
+    return true;
     }
 }
