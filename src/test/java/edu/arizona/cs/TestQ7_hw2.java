@@ -22,7 +22,7 @@ public class TestQ7_hw2 {
             assert ans_q7_1_1.length == 2;
             int counter=0;
             for(Document doc: gold_q7_1_1) {
-                doc.equals(ans_q7_1_1[counter]);
+               assert doc.equals(ans_q7_1_1[counter])==true;
                 counter+=1;
             }
         }
@@ -51,7 +51,8 @@ public class TestQ7_hw2 {
             assert ans_q7_1_2.length == 3;
             int counter=0;
             for(Document doc: gold_q7_1_2) {
-                doc.equals(ans_q7_1_2[counter]);
+                assert doc.equals(ans_q7_1_2[counter])==true;
+
                 counter+=1;
             }
         }
