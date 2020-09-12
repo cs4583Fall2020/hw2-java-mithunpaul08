@@ -37,7 +37,7 @@ public class InvertedIndex {
         //check if index exists, else create one
         Document ans1=new Document("Doc1",3,1);
         Document ans2=new Document("Doc2",1,2);
-        Document ans3=new Document("Doc2",1,5);
+        Document ans3=new Document("Doc3",1,5);
         Document[] dummy_ans= {ans1,ans2,ans3};
         return dummy_ans;
     }
