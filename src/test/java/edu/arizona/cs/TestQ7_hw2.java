@@ -41,7 +41,7 @@ public class TestQ7_hw2 {
             String query = "schizophrenia /4 drug";
             Document ans1=new Document("Doc1",3,1);
             Document ans2=new Document("Doc2",1,2);
-            Document ans3=new Document("Doc3",1,5);
+            Document ans3=new Document("Doc3",5,1);
             Document[] gold_q7_1_2= {ans1,ans2,ans3};
             InvertedIndex objInvertedIndex = new InvertedIndex(inputFileFullPath);
             Document[] ans_q7_1_2 = objInvertedIndex.runQ7_1_2(query);
