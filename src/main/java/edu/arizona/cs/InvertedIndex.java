@@ -28,7 +28,7 @@ public class InvertedIndex {
     public Document[] runQ7_1_1(String query) throws java.io.FileNotFoundException,ArrayIndexOutOfBoundsException {
         //check if index exists, else create one
         Document ans1=new Document("Doc1",3,1);
-        Document ans2=new Document("Doc2",1,2);
+        Document ans2=new Document("Doc3",1,2);
         Document[] dummy_ans= {ans1,ans2};
         return dummy_ans;
     }
