@@ -12,7 +12,7 @@ public class Document {
     }
 
     public boolean equals(Document answer) {
-        if  (docid!=answer.docid)
+        if  (!docid.equals(answer.docid))
         {
             return false;
         }
