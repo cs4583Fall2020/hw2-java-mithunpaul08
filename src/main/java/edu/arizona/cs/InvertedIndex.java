@@ -15,8 +15,8 @@ public class InvertedIndex {
             //a boiler plate main function if you want to test without using mvn test
             //build index
             String fileName = "Docs.txt";
-            System.out.println("********Welcome to  Homework 1!");
-            String query = "schizophrenia AND drug";
+            System.out.println("********Welcome to  Homework 2!");
+            String query = "schizophrenia /2 drug";
             InvertedIndex objInvertedIndex = new InvertedIndex(fileName);
             Document[]  ans = objInvertedIndex.runQ7_1_1(query);
         }
